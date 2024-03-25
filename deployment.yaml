@@ -15,5 +15,6 @@ spec:
       containers:
       - name: python-web-server
         image: harish343/webserver:latest # Replace this with your Docker image tag
+        imagePullPolicy: Always
         ports:
         - containerPort: 80 # Assuming your Flask app runs on port 5000
